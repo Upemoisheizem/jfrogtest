@@ -35,5 +35,5 @@ jobs:
 
       - name: Zip artifact for deployment
         run: |
-          zip NES_WEB-r24.04-0001.zip ./* -r
+          zip NES_WEB-r24.04-${{JFROG_CLI_BUILD_NUMBER}}.zip ./* -r
           ls -al
